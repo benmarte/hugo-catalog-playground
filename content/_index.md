@@ -5,7 +5,7 @@ This site is for users to test out Hugo Catalog and it's widgets in a controlled
 
 If you need help please refer to the online documentation at: http://hugocatalog.com
 
-Feel free to experiment without worry of breaking anything none of your changes will be saved or affect this site, go nuts.
+Feel free to experiment without worry of breaking anything, this site gets reset every day at midnight so all your changes will only last 24 hours.
 
 If you find any bugs or have any feature requests file them in our theme repo [github issues](https://github.com/benmarte/hugo-catalog/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc).
 
