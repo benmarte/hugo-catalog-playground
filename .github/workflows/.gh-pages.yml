@@ -5,7 +5,7 @@ on:
     branches:
       - main # Set a branch to deploy
   schedule:
-   - cron: "*/5 * * * *"
+   - cron: "0 0 * * *"
   pull_request:
   workflow_dispatch:
 
@@ -15,22 +15,22 @@ jobs:
     steps:
 
       - name: Checking our files from restore branch
-        if: github.event.schedule == '*/5 * * * *'
+        if: github.event.schedule == '0 0 * * *'
         run: echo "Deploying Hugo Catalog Playground from restore branch"
 
       - uses: actions/checkout@v3
-        if: github.event.schedule == '*/5 * * * *'
+        if: github.event.schedule == '0 0 * * *'
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
           ref: restore
 
       - name: Checking our files from main branch
-        if: github.event.schedule != '*/5 * * * *'
+        if: github.event.schedule != '0 0 * * *'
         run: echo "Deploying Hugo Catalog Playground from main branch"
 
       - uses: actions/checkout@v3
-        if: github.event.schedule != '*/5 * * * *'
+        if: github.event.schedule != '0 0 * * *'
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
