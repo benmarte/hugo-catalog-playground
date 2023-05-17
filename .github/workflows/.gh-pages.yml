@@ -20,7 +20,7 @@ jobs:
 
       - name: Hugo restore setup
         uses: peaceiris/actions-hugo@v2.6.0
-        if: github.event.schedule == '30 14 * * 3'
+        if: github.event.schedule == '5 0 * * *'
         with:
           hugo-version: "latest"
           extended: true
@@ -28,7 +28,7 @@ jobs:
 
       - name: Hugo setup
         uses: peaceiris/actions-hugo@v2.6.0
-        if: github.event.schedule != '30 14 * * 3'
+        if: github.event.schedule != '5 0 * * *'
         with:
           hugo-version: "latest"
           extended: true
