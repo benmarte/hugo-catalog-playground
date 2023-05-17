@@ -1,5 +1,5 @@
 ---
-title: Test
+title: Welcome To Hugo Catalog Playground
 ---
 This site is for users to test out Hugo Catalog and it's widgets in a controlled environment so they can get a better idea how it works and it's capabilities.
 

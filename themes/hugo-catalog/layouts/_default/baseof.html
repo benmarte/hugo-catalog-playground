@@ -11,7 +11,9 @@
             {{ partial "nav.html" . }}
         
             <div id="content">
-                {{- partial "header.html" . -}}
+                {{ block "header" . }}
+                    {{- partial "header.html" . -}}
+                {{ end }}
             
                 <div class="content-body">
                     {{- block "main" . }}

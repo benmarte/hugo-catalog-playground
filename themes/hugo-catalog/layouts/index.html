@@ -1,3 +1,11 @@
-{{ define "main" }}
-{{.Content}}
+{{ define "header" }}
+    {{with site.GetPage "/main"}}
+        {{ partial "header.html" . }}
+    {{ end }}   
 {{ end }}
+
+{{ define "main" }}
+{{with site.GetPage "/main"}}
+        {{.Content}}
+    {{ end }}
+{{end}}
