@@ -1,12 +1,11 @@
 ---
-title: Welcome To Hugo Catalog Playground
+title: Hugo Catalog Playground
 ---
-
 This site is for users to test out Hugo Catalog and it's widgets in a controlled environment so they can get a better idea how it works and it's capabilities.
 
 If you need help please refer to the online documentation at: http://hugocatalog.com
 
-Feel free to experiment without worry of breaking anything this site gets reset ot its initial state every day at midnight, go nuts.
+Feel free to experiment without worry of breaking anything, this site gets reset every day at midnight so all your changes will only last 24 hours.
 
 If you find any bugs or have any feature requests file them in our theme repo [github issues](https://github.com/benmarte/hugo-catalog/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc).
 

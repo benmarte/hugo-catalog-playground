@@ -225,7 +225,7 @@
           {
             name: "src",
             label: "File",
-            widget: "file",
+            widget: "image",
             default: "",
             required: true,
             media_library: {
@@ -268,13 +268,14 @@
           {
             name: "overlay",
             label: "Overlay",
-            widget: "file",
+            widget: "image",
             default: "",
             required: false,
             media_library: {
               config: {
                 allow_multiple: false,
                 media_folder: "/static/images",
+                max_file_size: 5000000,
               },
             },
           },
@@ -673,6 +674,7 @@
               config: {
                 allow_multiple: false,
                 media_folder: "/static/images",
+                max_file_size: 5000000,
               },
             },
           },
@@ -829,6 +831,7 @@
               config: {
                 allow_multiple: false,
                 media_folder: "/static/images",
+                max_file_size: 5000000,
               },
             },
           },
@@ -868,6 +871,7 @@
               config: {
                 media_folder: "/static/images",
                 allow_multiple: false,
+                max_file_size: 5000000,
               },
             },
           },

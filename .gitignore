@@ -4,7 +4,9 @@
 ### Hugo ###
 # Generated files by hugo
 /public/
+public/
 /resources/_gen/
+resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
 
@@ -55,7 +57,6 @@ Icon
 .com.apple.timemachine.donotpresent
 
 # Directories potentially created on remote AFP share
-.DS_Store
 .AppleDB
 .AppleDesktop
 Network Trash Folder
