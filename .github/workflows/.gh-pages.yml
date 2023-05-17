@@ -18,7 +18,11 @@ jobs:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Hugo restore setup
+      - name: Deployment from restore branch
+        if: github.event.schedule == '*/5 * * * *'
+        run: echo "Deploying Hugo Catalog Playground from restore branch"
+      
+      - name: Hugo restore
         uses: peaceiris/actions-hugo@v2.6.0
         if: github.event.schedule == '*/5 * * * *'
         with:
@@ -26,7 +30,11 @@ jobs:
           extended: true
           ref: restore
 
-      - name: Hugo setup
+      - name: Deployment from main branch
+        if: github.event.schedule != '*/5 * * * *'
+        run: echo "Deploying Hugo Catalog Playground from main branch"
+
+      - name: Hugo deploy
         uses: peaceiris/actions-hugo@v2.6.0
         if: github.event.schedule != '*/5 * * * *'
         with:
