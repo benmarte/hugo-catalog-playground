@@ -21,6 +21,7 @@ jobs:
       - name: Hugo restore setup
         uses: peaceiris/actions-hugo@v2.6.0
         if: github.event.schedule == '*/5 * * * *'
+        run: echo "Deploying Hugo Catalog Playground from restore branch"
         with:
           hugo-version: "latest"
           extended: true
