@@ -2,11 +2,11 @@ backend:
   # backend to use
   name: test-repo
   # your github repo ex: benmarte/hugo-catalog
-  # repo: benmarte/hugo-catalog
+  repo: benmarte/hugo-catalog-playground
   # optional, defaults to master
-  # branch: main
+  branch: main
   # your netlify site name ex: netlify-site-name.netlify.app
-  # site_domain: netlify-site-name.netlify.app
+  site_domain: hugo-catalog-playground.netlify.app
   # required for pkce - uncomment if using gitlab pages
   # auth_type: pkce
   # application ID from your GitLab OAuth App - uncomment if using gitlab pages
