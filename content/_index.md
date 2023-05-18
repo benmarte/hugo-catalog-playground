@@ -7,8 +7,7 @@ If you need help please refer to the online documentation at: http://hugocatalog
 
 Feel free to experiment without worry of breaking anything, nothing you do gets saved.
 
-{{<hint type="warning">}}
-
+{{<hint type="warning" span="6">}}
 Image links do not work since they are not being uploaded.
 
 We are working to provide a better playground experience, so stay tuned.
