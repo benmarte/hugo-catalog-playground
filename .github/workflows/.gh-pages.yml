@@ -9,6 +9,9 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-20.04
@@ -18,7 +21,7 @@ jobs:
         if: github.event.schedule == '0 0 * * *'
         run: echo "Deploying Hugo Catalog Playground from restore branch"
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         if: github.event.schedule == '0 0 * * *'
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
@@ -29,14 +32,14 @@ jobs:
         if: github.event.schedule != '0 0 * * *'
         run: echo "Deploying Hugo Catalog Playground from main branch"
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         if: github.event.schedule != '0 0 * * *'
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Hugo deploy
-        uses: peaceiris/actions-hugo@v3.0.0
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "latest"
           extended: true
